@@ -1,0 +1,87 @@
+.loginPage {
+    color: white;
+    align-self: center;
+}
+
+.logoImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.loginLabels {
+    text-align: right;
+}
+
+.loginText {
+    text-align: left;
+    width: 200px;
+}
+
+.loginButton {
+        background-color: #f1f1ef;
+        color: #37352f;
+        border-radius: 8px;
+        border: none;
+        text-align: left;
+        padding: 5px;
+        padding-right: 20px;
+        height: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        width: 100%;
+}
+
+
+.loading {
+    text-align: center;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.errorTime {
+    padding-top: 2%;
+    text-align: center;
+    color: red;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-collapse: separate;
+    border-spacing:0 15px;
+}
+
+.icon {
+    width: 5px;
+    text-align: right;
+
+}
+
+.userEntries {
+    width: 100%;
+    text-align: left;
+    border-collapse: separate;
+    padding: 5px;
+    background: #f1f1ef;
+    color: #37352f;
+    border-radius: 8px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.smallIcon {
+    height: 40px;
+}
+
+.smallIconKey {
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

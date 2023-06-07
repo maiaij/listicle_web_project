@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/addItem.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/addItem.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+    <!-- <script type="module/javascript" src="../scripts/firebaseApp.js"></script> -->
+    <title>listicle</title>
+</head>
+
+
+<body class="itemForm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/home">
+                    <img id="imageHeader" , src="../pictures/logo.png" width="40" height="40"
+                        class="d-inline-block align-top" alt="">
+                    Listicle
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="loginButton" class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="loginButton" class="nav-link" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header-img"></div>
+
+    <br>
+
+    <h2>| Add Item!</h2>
+
+    <br>
+
+
+    <form id="new-item-form" class="addList" action="/creatingItem" method="post">
+        <table class="center">
+            <tr>
+                <td colspan="2">
+                    <div class="imageHolder">
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label form="new-item-form" class="bText" for="locations">Title:</label>
+                </td>
+                <td class="userEdit">
+                    &ensp;
+                    <img src='../pictures/leaf.png' class="leaf">
+                    &ensp;
+                    <input form="new-item-form" type="text" name="title" id="item-title" required
+                        placeholder="Enter a title">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label form="new-item-form" class="bText" for="locations">Item type:</label>
+                </td>
+                <td class="userEdit">
+                    &ensp;
+                    <img src='../pictures/leaf.png' class="leaf">
+                    &ensp;
+                    <select form="new-item-form" name="type" id="item-type" class="dropdown">
+                        <option form="new-item-form" value="Other">Other</option>
+                        <option form="new-item-form" value="Book">Book</option>
+                        <option form="new-item-form" value="Comic">Comic</option>
+                        <option form="new-item-form" value="TV Show">TV Show</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label form="new-item-form" class="bText" for="locations">Status:</label>
+                </td>
+                <td class="userEdit">
+                    &ensp;
+                    <img src='../pictures/leaf.png' class="leaf">
+                    &ensp;
+                    <select form="new-item-form" name="status" id="item-status" class="dropdown">
+                        <option form="new-item-form" value="Ongoing">Ongoing</option>
+                        <option form="new-item-form" value="Not Started">Not Started</option>
+                        <option form="new-item-form" value="BackBurner">BackBurner</option>
+                        <option form="new-item-form" value="Completed">Completed</option>
+                        <option form="new-item-form" value="Dropped">Dropped</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label form="new-item-form" class="bText" for="locations">Progress:</label>
+                </td>
+                <td class="userEdit">
+                    <div id="progressType">
+                        &ensp;
+                        <img src='../pictures/leaf.png' class="leaf">
+                        &ensp;
+                        <input form="new-item-form" type="number" name="progress" id="item-progress" min="0" value="0">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label form="new-item-form" class="bText" for="locations">Rating:</label>
+                </td>
+                <td class="userEdit">
+                    &ensp;
+                    <img src='../pictures/leaf.png' class="leaf">
+                    &ensp;
+                    <input form="new-item-form" type="number" name="rating" id="item-rating" min="0" max="5" value="5"
+                        step="0.1">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label form="new-item-form" class="bText" for="locations">Recommend?</label>
+                </td>
+                <td class="userEdit">
+                    &ensp;
+                    <img src='../pictures/leaf.png' class="leaf">
+                    &ensp;
+                    <input form="new-item-form" type="checkbox" id="yes-rec" name="recommend" checked>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label form="new-item-form" class="bText" for="locations">Link:</label>
+                </td>
+                <td class="userEdit">
+                    &ensp;
+                    <img src='../pictures/leaf.png' class="leaf">
+                    &ensp;
+                    <input form="new-item-form" type="text" name="link" id="item-link" value=" ">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label form="new-item-form" class="bText" for="locations">Notes:</label>
+                </td>
+                <td class="userEdit">
+                    &ensp;
+                    <img src='../pictures/leaf.png' class="leaf">
+                    &ensp;
+                    <input form="new-item-form" type="text" name="notes" id="item-notes" value="no notes yet">
+                </td>
+            </tr>
+
+
+
+
+        </table>
+
+        <br>
+
+        <table class="center">
+            <tr>
+                <td>
+                    <button type="submit" class="addButton" id="createListButton">&ensp;
+                        <img src='../pictures/leaf.png' class="leaf">
+                        &ensp; Add Item </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+
+    <script type="module/javascript" src="../scripts/userAuth.js"></script>
+
+</body>
+
+</html>

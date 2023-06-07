@@ -1,0 +1,49 @@
+
+.header-img {
+    width: 100%;
+    height: 200px;
+    background: url('../pictures/HeaderC.gif');
+    background-size: cover;
+  }
+
+
+.userButtons {
+    color: #37352f;
+    background-color: #f1f1ef;
+    border-radius: 8px;
+    border: none;
+    text-align: left;
+    padding: 5px;
+    width: 45%;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul :hover {
+    cursor: pointer;
+}
+
+.mainList{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-style: italic;
+    width: 90%;
+    padding: 5px;
+    background: #f1f1ef;
+    color: #37352f;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 8px;
+    height: 50px;
+    line-height: 40px;
+}
+
+
+
+

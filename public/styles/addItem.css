@@ -1,0 +1,65 @@
+.header-img {
+    width: 100%;
+    height: 200px;
+    background: url('../pictures/HeaderA.gif');
+    background-size: cover;
+  }
+
+  
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-collapse: separate;
+    border-spacing:0 15px;
+}
+
+.showArt {
+    width: 200px;
+}
+
+.userEdit {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 80%;
+    padding: 5px;
+    background: #f1f1ef;
+    color: #37352f;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 8px;
+    height: 50px;
+    line-height: 40px;
+    
+}
+
+.label {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 20%;
+    padding: 5px;
+    background: transparent;
+    color: #37352f;
+    position: relative;
+    height: 50px;
+    line-height: 40px;
+    
+}
+
+.addButton {
+    color: #37352f;
+    background-color: #f1f1ef;
+    border-radius: 8px;
+    border: none;
+    text-align: left;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <script type="text/javascript" src="../scripts/login.js"></script>
+
+    <!-- <script type="module/javascript" src="../scripts/firebaseApp.js"></script> -->
+    <title>listicle</title>
+</head>
+
+<body class="loginPage">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img id="imageHeader" , src="../pictures/logo.png" width="40" height="40"
+                        class="d-inline-block align-top" alt="">
+                    Listicle
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <svg class="logoImage"> </svg>
+    <!--<img src="pictures/logo.png" class="logoImage">-->
+
+
+
+    <!-- initial login page -->
+    <div class="home">
+        <table class="center">
+            <tr>
+                <td>
+                    <br>
+                    <h1>| listicle</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="loginButton" id="goToLoginButton">
+                        &ensp;
+                        <img src='../pictures/leaf.png' class="leaf">
+                        &ensp;
+                        Log In
+                    </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="loginButton" id="goToSignUpButton">
+                        &ensp;
+                        <img src='../pictures/leaf.png' class="leaf">
+                        &ensp;
+                        Sign Up
+                    </button> 
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+    <!-- log in "form" -->
+    <form id="log-in-form" class="logIn" action="/home" method="post">
+        <!--<svg class="logoImage"> </svg> -->
+        <table class="center">
+            <tr>
+                <td>
+                    <br>
+                    <h1>| listicle</h1>
+                </td>
+            </tr>
+            <tr class="userEntries">
+                <td class="loginText">
+                    <img src="../pictures/loginUser.png" class="smallIconKey">
+                    <input form="log-in-form" type="email" name="email" placeholder="email">
+                </td>
+            </tr>
+            <tr class="userEntries">
+                <td class="loginText">
+                    <img src="../pictures/loginPass.png" class="smallIcon" >
+                    <input form="log-in-form" type="password" name="password" placeholder="password">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table class="center">
+            <tr>
+                <td>
+                    <button class="loginButton" id="loginButton">
+                        &ensp;
+                        <img src='../pictures/leaf.png' class="leaf">
+                        &ensp;
+                        Login
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- sign up "form" -->
+    <form id="sign-up-form" class="signUp" action="/welcome" method="post">
+        <!--<svg class="logoImage"> </svg> -->
+        <table class="center">
+            <tr>
+                <td>
+                    <br>
+                    <h1>| listicle</h1>
+                </td>
+            </tr>
+            <tr class="userEntries">
+                <td class="loginText">
+                    <img src="../pictures/loginUser.png" class="smallIconKey">
+                    <input form="sign-up-form" type="email" name="email" id="signup-email" placeholder="enter an email">
+                </td>
+            </tr>
+            <tr class="userEntries">
+                <td class="loginText">
+                    <img src="../pictures/loginPass.png" class="smallIcon">
+                    <input form="sign-up-form" type="password" pattern="[a-zA-Z0-9]{5,}[0-9]{1,}" required
+                        title="No less than 6 characters,no special characters and must end in a number" name="password"
+                        id="signup-password" placeholder="enter a password">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table class="center">
+            <tr>
+                <td>
+                    <button class="loginButton" id="signUpButton">
+                        &ensp;
+                        <img src='../pictures/leaf.png' class="leaf">
+                        &ensp;
+                        Sign Up
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+    <div class="errorTime">
+        <%=errorMessage%>
+    </div>
+
+    <div id="loadingImage" class="loading">
+        <img src="../pictures/loading.gif">
+      </div>
+
+    <br>
+
+    <script type="module/javascript" src="../scripts/userAuth.js"></script>
+</body>
+
+</html>

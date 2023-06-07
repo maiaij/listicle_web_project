@@ -1,0 +1,220 @@
+/*
+    The following tags are used across all pages
+*/
+
+* {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+br {
+    padding: 25px;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #37352f;
+    font-weight: 900;
+}
+h2{
+    margin-left: 5%;
+    margin-right: auto;
+    text-align: left;
+    color: #37352f;
+    font-weight: 900;
+}
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: #37352f;
+    font-weight: 900;
+    font-style: italic;
+}
+h4 {
+    margin-left: 5%;
+    margin-right: auto;
+    text-align: left;
+    color: #37352f;
+    font-weight: 900;
+    font-style: italic;
+}
+h5 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+h6 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+p {
+    margin-left: 5%;
+    margin-right: auto;
+    text-align: left;
+    color: #37352f;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    padding-right: 10%;
+}
+
+input[type=text] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37352f;
+}
+
+input[type=text]:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37352f;
+}
+
+input[type=email] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37352f;
+}
+
+input[type=email]:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37352f;
+}
+
+input[type=text] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37352f;
+}
+
+input[type=password]:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37352f;
+}
+
+input[type=password] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37352f;
+}
+
+input[type=number]:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37352f;
+}
+
+input[type=number] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37352f;
+}
+
+input[type=checkbox] {
+    background-color: transparent;
+}
+
+input[type=checkbox]:checked {
+    accent-color:  #37352f;
+}
+
+
+
+.dropdown {
+    border: none;
+    border-bottom: 2px solid #37352f;
+    background-color: transparent;
+}
+
+.dropdown ::selection {
+    border: none;
+    border-bottom: 2px solid #37352f;
+    background-color: #f1f1ef;
+    background-color: transparent;
+}
+
+.img-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    padding: 10px;
+}
+
+.img-fluid-text {
+    margin-left: auto;
+    margin-right: auto;
+    width:33.33%;
+    padding: 50px;
+}
+
+.img-fluid-header {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+
+.padded {
+    padding: 50px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+/*
+peach #ea7e65
+blue #041044
+*/
+
+
+/*
+    the following tags are used for the /login/ page only
+*/
+
+
+/* d3 attempt */
+.st0{
+    fill:#041044;
+}
+	
+.st1{
+    fill:#EB7E65;
+    stroke:#EB7E65;
+    stroke-width:5;
+    stroke-miterlimit:10;
+}
+  .leaf {
+    width: 20px;
+}
+
+.loginButton {
+    background-color: #f1f1ef;
+    color: #37352f;
+    border-radius: 8px;
+    border: none;
+    text-align: left;
+    padding: 5px;
+    padding-right: 20px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+}
